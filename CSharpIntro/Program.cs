@@ -30,6 +30,7 @@ namespace CSharpIntro
                 myInt++;
             }
 
+
             // while loop
             while (myInt < 100){
                 Console.Write('.');
@@ -38,12 +39,9 @@ namespace CSharpIntro
             Console.WriteLine("");
 
             // switch statement
-            int caseSwitch = 2;
+            int caseSwitch = 1;
             switch (caseSwitch){
-                case 1:
-                    Console.WriteLine("case 1");
-                    break;
-
+                case 1: // if case switch == 1, falls through to 2 anyway
                 case 2:
                     Console.WriteLine("case 2");
                     break;
@@ -76,13 +74,14 @@ namespace CSharpIntro
             // format document in VS Code
 
                 // File -> Preferences -> Settings
+                // actually::: alt+shift+f
 
             // extra: make new static method to do something, call it
             doSomething();
 
             // extra: learn what var means in C# and use it
                 // an implicit type; the compiler decides the type, useful for when working with anonymous type variables
-            var i = 10;
+            var j = 10;
             
 
         }
