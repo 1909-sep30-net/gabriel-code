@@ -1,0 +1,127 @@
+<!-- every html 5 document needs to begin with the proper HTML 5 document type declaration-->
+<!--  ( not technically an element ) -->
+<!DOCTYPE html>
+
+<!-- the "root element" or  "document element" - the one containing all others is the HTML element-->
+<html lang="en"> <!-- whole page is in english -->
+
+<head>
+    <!-- This stuff adds stuff about the page, metadata -->
+
+    <meta charset="UTF-8"> <!-- interpret this page as UTF-8, unicode character set -->
+
+    <!-- mobile initial zoom stuff  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- switches off microsoft edge old ie compatibility behaviors -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Gabe Ang">
+
+    <!-- These two used to be highly relevant for search engine results -->
+    <meta name="description" content="description of this page">
+    <meta name="keywords" content="search engine keywords for this page">
+    <!-- SEO (search engine optimization) these days is more about getting other people to
+    link to you in the right contexts -->
+
+    <title>Document</title> <!-- tab/window/bookmark title -->
+</head>
+<body>
+    Hi c:
+    <p>paragraph</p>
+    <h1>biggest header</h1>
+    <h3>medium header</h3>
+    <h6>tiniest header</h6>
+    <img src="https://mymodernmet.com/wp/wp-content/uploads/2017/10/highland-cattle-calves-17.jpg" width="200px" >
+
+    <!-- Anchor tag -->
+    <a href="google.com" target="_blank" rel="noopener">Google</a>
+
+    <!-- Unordered List (bullet list) -->
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+    </ul>
+
+    <!-- ordered list (numbered list) -->
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+    </ol>
+
+    <!-- definition list (dl) for key value pairs -->
+
+    <!-- formatting elements proper way -->
+    <p>
+        text that's <em>emphasized</em> and <strong>strong</strong>.
+    </p>
+    <!-- These are so that the css can change em and strong wihtout having to change <bold> or <italics> -->
+
+    <!-- div element -->
+    <!-- generic block element -->
+
+    <!-- span element -->
+    <!-- generic inline element -->
+
+    <!-- global attributes -->
+    <!-- attributes that any element can have -->
+    <!-- id: identifier that should be unique on the page -->
+    <!-- class: identifier that can be shared with others -->
+    <!-- ^^^^ used by css to mark specific spans or...divs? to have special formatting -->
+
+    <!-- line break -->
+    <br>
+
+    <!-- tables -->
+    <table>
+        <thead>
+        <!-- <thead> table header section/row -->
+            <th>City</th>
+            <th>State</th>
+        </thead>
+        <tbody> <!-- table body -->
+            <tr> <!-- table row -->
+                <td>Seattle</td> <!-- table data cell -->
+                <td>WA</td>
+            </tr> 
+            <tr>
+                <td>Arlington</td>
+                <td>TX</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- some elements that HTML 5 added: -->
+        <!-- multimedia -->
+        <audio></audio>
+        <video></video>
+        <!-- audio and video both support multiple formats within that one element, so the browser can choose the one it knows best -->
+        <canvas></canvas> <!-- supports graphics primitives, flashgames-->
+
+        <!-- a variety of "structural" elements -->
+        <header></header>
+
+        <nav></nav>
+
+        <main>
+            <article>
+                <aside></aside>
+            </article>
+        </main>
+        <footer></footer>
+
+        <!-- method: GET (puts form data in query string) -->
+        <!--         POST (puts form data in request body) -->
+        <!-- action: what URL to send the data to. -->
+        <form method="GET" action="#">
+            <!-- form controls go in forms, most of them are "input" elements, there are others -->
+            <!-- name: the key of the key-value pair sent to the server for this form control -->
+            <!-- id: the id of the input that other things can use to refer to the input -->
+
+            <label for="box2"  >Checkbox: </label> <!-- Allows you to label and associate css with it-->
+                    <input type="checkbox" name="checkbox1" id="box2">
+            <input type="color">
+            <input type="submit">
+        </form>
+</body>
+</html>
