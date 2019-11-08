@@ -29,8 +29,8 @@ import {
           stagger(50,[
             style({ opacity: 1 }),
             animate('1s 100ms ease-in-out', style({
-              height: '100px',
-              opacity: 0.5,
+              height: '50px',
+              opacity: 0.9,
               backgroundColor: 'green'
             })),
             animate('1s 100ms ease-in-out', style({
@@ -38,17 +38,28 @@ import {
               opacity: 0,
               backgroundColor: 'yellow'
             })),
-          ])
+          ]),
+          state('test',style({
+            width:'100px'
+          })),
         ],{optional: true}),
+        
         query(':enter',[
           style({ opacity: 0 }),
-          stagger(200,[
-            animate('1s 100ms ease-in-out', style({
+          stagger(100,[
+            animate('0.5s ease-out', style({
               height: '100px',
               opacity: 1,
-              backgroundColor: 'green'
-            }))
-          ])
+              //backgroundColor: 'green'
+            })),
+            animate('0.5s ease-in-out', style({
+              height: '1.6em',
+              opacity: 1,
+              //backgroundColor: 'green'
+            })),
+
+          ]),
+
         ],{optional: true})
       ]),
     ]),
